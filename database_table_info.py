@@ -30,17 +30,14 @@ class DatabaseTable:
         name: str,
         schema: DatabaseSchema,
         database: Database,
-        size_mb: float,
         column_list: List[DatabaseColumn],
     ):
         self.name = name
         self.schema = schema
         self.database = database
-        self.size_mb = size_mb
         self.column_list = column_list
 
     database: Database
     schema: DatabaseSchema
     name: str
-    size_mb: float
     column_list: List[DatabaseColumn]

@@ -1,3 +1,4 @@
+from .connection import DatabaseConnectionData
 from .database_table_info import Database
 from .database_table_info import DatabaseColumn
 from .database_table_info import DatabaseSchema
@@ -9,4 +10,5 @@ __all__ = [
     "DatabaseTable",
     "DatabaseSchema",
     "Database",
+    "DatabaseConnectionData",
 ]
