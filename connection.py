@@ -3,13 +3,13 @@ class DatabaseConnectionData:
     port: str
     username: str
     password: str
-    con_kwargs: dict
+    connection_kwargs: dict
 
     def __init__(
-        self, host: str, port: str, username: str, password: str, con_kwargs: dict
+        self, host: str, port: str, username: str, password: str, connection_kwargs: dict
     ):
         self.host = host
         self.port = port
         self.username = username
         self.password = password
-        self.con_kwargs = con_kwargs
+        self.connection_kwargs = connection_kwargs
