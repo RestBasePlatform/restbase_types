@@ -6,7 +6,12 @@ class DatabaseConnectionData:
     connection_kwargs: dict
 
     def __init__(
-        self, host: str, port: str, username: str, password: str, connection_kwargs: dict
+        self,
+        host: str,
+        port: str,
+        username: str,
+        password: str,
+        connection_kwargs: dict,
     ):
         self.host = host
         self.port = port
