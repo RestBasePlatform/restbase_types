@@ -4,10 +4,10 @@ class ServerConnectionCredentials:
     password: str
 
     def __init__(
-            self,
-            username: str,
-            ssh_key: str,
-            password: str,
+        self,
+        username: str,
+        ssh_key: str,
+        password: str,
     ):
         self.username = username
         self.password = password
@@ -30,11 +30,11 @@ class ServerConnectionData:
     connection_data: ServerConnectionCredentials
 
     def __init__(
-            self,
-            host: str,
-            port: int,
-            connection_kwargs: dict,
-            connection_data: ServerConnectionCredentials
+        self,
+        host: str,
+        port: int,
+        connection_kwargs: dict,
+        connection_data: ServerConnectionCredentials,
     ):
         self.host = host
         self.port = port
